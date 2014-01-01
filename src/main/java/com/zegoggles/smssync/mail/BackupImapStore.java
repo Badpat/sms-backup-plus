@@ -179,13 +179,15 @@ public class BackupImapStore extends ImapStore {
                 if (LOCAL_LOGV) Log.v(TAG, "Sorting done");
 
                 messages = new ArrayList<Message>(max);
-                messages.addAll(Arrays.asList(msgs).subList(0, max));
+                //messages.addAll(Arrays.asList(msgs).subList(0, max));
+                int aSize = Arrays.asList(msgs).size();
+                messages.addAll(Arrays.asList(msgs).subList(aSize - max, aSize));
             } else {
                 messages = new ArrayList<Message>(msgs.length);
                 Collections.addAll(messages, msgs);
             }
 
-            Collections.reverse(messages);
+            //Collections.reverse(messages);
 
             return messages;
         }
@@ -220,7 +222,7 @@ public class BackupImapStore extends ImapStore {
         public int compare(final Message m1, final Message m2) {
             final Date d1 = m1 == null ? EARLY : m1.getSentDate() != null ? m1.getSentDate() : EARLY;
             final Date d2 = m2 == null ? EARLY : m2.getSentDate() != null ? m2.getSentDate() : EARLY;
-            return d2.compareTo(d1);
+            return d1.compareTo(d2);
         }
     }
 

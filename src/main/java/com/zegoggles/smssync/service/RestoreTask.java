@@ -95,10 +95,10 @@ class RestoreTask extends AsyncTask<RestoreConfig, RestoreState, RestoreState> {
             final List<Message> msgs = new ArrayList<Message>();
 
             if (config.restoreSms) {
-                msgs.addAll(imapStore.getFolder(SMS).getMessages(config.maxRestore, config.restoreOnlyStarred, null));
+                msgs.addAll(imapStore.getFolder(SMS).getMessages(500, config.restoreOnlyStarred, null));
             }
             if (config.restoreCallLog) {
-                msgs.addAll(imapStore.getFolder(CALLLOG).getMessages(config.maxRestore, config.restoreOnlyStarred, null));
+                msgs.addAll(imapStore.getFolder(CALLLOG).getMessages(100, config.restoreOnlyStarred, null));
             }
 
             final int itemsToRestoreCount = config.maxRestore <= 0 ? msgs.size() : Math.min(msgs.size(), config.maxRestore);
