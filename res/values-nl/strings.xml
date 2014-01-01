@@ -43,7 +43,7 @@
   <string name="status_restore_canceled_details">%1$d/%2$d items succesvol teruggeplaatst.</string>
 
   <string name="status_unknown_error">Fout</string>
-  <string name="notification_unknown_error">SMSBackup+ fout</string>
+  <string name="notification_general_error">SMSBackup+ fout</string>
 
   <string name="status_unknown_error_details">Fout gedurende backuppen/terugplaatsen:\n<xliff:g id="error_description">%1$s</xliff:g></string>
   <string name="status_auth_failure">Login fout</string>
@@ -266,13 +266,9 @@
   <string name="mms">MMS</string>
   <string name="calllog">Gespreksdetails</string>
 
-  <string name="ui_dialog_donate_prepare_message">Voorbereiden donatie,even geduld aub...</string>
   <string name="ui_dialog_donate_message">Bepaal bedrag en munteenheid:</string>
   <string name="ui_donation_success_message">Donatie succesvol, dankjewel!</string>
   <string name="ui_donation_failure_message">Donatie mislukt: %1$s</string>
-  <string name="ui_donation_canceled_message">Donatie geannuleerd</string>
-  <string name="ui_donation_prompt_currency">Munteenheid</string>
-  <string name="ui_donation_oh_noez_no_network">Sorry, je hebt een werkende internetconnectie nodig om een bedrag te doneren.</string>
 
   <string name="pref_disable_acra">Crash foutrapportage</string>
   <string name="pref_acra_enabled">SMS Backup+ zal automatisch een foutrapportage versturen na een Force Close.</string>

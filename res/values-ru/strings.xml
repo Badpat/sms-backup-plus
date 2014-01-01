@@ -45,7 +45,7 @@
   <string name="status_restore_canceled_details">%1$d из %2$d объектов успешно восстановлено.</string>
 
   <string name="status_unknown_error">Ошибка</string>
-  <string name="notification_unknown_error">Ошибка SMSBackup+</string>
+  <string name="notification_general_error">Ошибка SMSBackup+</string>
 
   <string name="status_unknown_error_details">Ошибка сохранения/восстановления\n<xliff:g id="error_description">%1$s</xliff:g></string>
   <string name="status_auth_failure">Ошибка авторизации</string>
@@ -128,7 +128,6 @@
   <string name="ui_enable_auto_sync_label">Автосохранение</string>
   <string name="ui_enable_auto_sync_desc">Включить автосохранение новых SMS</string>
 
-  <string name="auto_backup_settings">Автосохранение</string>
   <string name="ui_auto_backup_schedule_label">Расписание</string>
   <string name="ui_auto_backup_schedule_desc">Когда сохранять SMS</string>
 
@@ -275,7 +274,7 @@
   <string name="app_log_backup_finished">Резервирование завершено</string>
 
   <string name="app_log_backup_failed_authentication">Ошибка авторизации: %1$s</string>
-  <string name="app_log_backup_failed_messaging">Ошибка: %1$s</string>
+  <string name="app_log_backup_failed_general_error">Ошибка: %1$s</string>
   <string name="app_log_backup_failed_connectivity">Резервирование пропущено, нет подключения к интернету</string>
   <string name="app_log_scheduled_next_sync">Следующая резервная копия: %1$s</string>
   <string name="app_log_no_next_sync">Выполнение следующей резервной копии не назначено</string>
@@ -312,8 +311,6 @@
   <string name="ui_dialog_donate_message">Выберите сумму:</string>
   <string name="ui_donation_success_message">Отправлено, спасибо за поддержку!</string>
   <string name="ui_donation_failure_message">Не удалось отправить пожертвование: %1$s</string>
-  <string name="ui_donation_canceled_message">Отменено</string>
-  <string name="ui_donation_oh_noez_no_network">Для выполнения этой операции необходимо подключение к Интернету.</string>
 
   <!-- purchase errors -->
   <string name="donation_error_iab_unavailable">Сервис покупок в приложениях недоступен</string>

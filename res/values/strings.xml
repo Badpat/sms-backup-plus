@@ -45,7 +45,7 @@
   <string name="status_restore_canceled_details">%1$d/%2$d items successfully restored.</string>
 
   <string name="status_unknown_error">Error</string>
-  <string name="notification_unknown_error">SMSBackup+ error</string>
+  <string name="notification_general_error">SMSBackup+ error</string>
 
   <string name="status_unknown_error_details">Error during backup/restore:\n<xliff:g id="error_description">%1$s</xliff:g></string>
   <string name="status_auth_failure">Login error</string>
@@ -102,7 +102,10 @@
   <string name="ui_backup_calllog_label">Backup Call log</string>
   <string name="ui_backup_calllog_desc">Enable Call log backup</string>
 
-  <string name="ui_backup_calllog_sync_calendar_enabled_label">Calendar sync</string>
+  <string name="ui_backup_whatsapp_label">Backup WhatsApp</string>
+  <string name="ui_backup_whatsapp_desc">Enable WhatsApp backup</string>
+
+    <string name="ui_backup_calllog_sync_calendar_enabled_label">Calendar sync</string>
   <string name="ui_backup_calllog_sync_calendar_enabled_desc">Add call log entries to calendar</string>
 
   <string name="ui_backup_calllog_types_label">Call types</string>
@@ -113,7 +116,11 @@
 
   <string name="ui_imap_folder_calllog_label">Call log label</string>
   <string name="ui_imap_folder_calllog_desc">Gmail label assigned to call log.</string>
-  <string name="ui_imap_folder_calllog_label_dialog_msg">Backed up call log entries will be tagged with this label in Gmail.</string>
+   <string name="ui_imap_folder_calllog_label_dialog_msg">Backed up call log entries will be tagged with this label in Gmail.</string>
+
+  <string name="ui_imap_folder_whatsapp_label">WhatsApp label</string>
+  <string name="ui_imap_folder_whatsapp_desc">Gmail label assigned to WhatsApp.</string>
+  <string name="ui_imap_folder_whatsapp_label_dialog_msg">Backed up WhatsApp messages will be tagged with this label in Gmail.</string>
 
   <string name="ui_mark_as_read_label">Mark as read (emails)</string>
   <string name="ui_mark_as_read_desc">Whether to mark messages in Gmail as read or not.</string>
@@ -127,6 +134,7 @@
   <string name="ui_enable_auto_sync_label">Auto backup</string>
   <string name="ui_enable_auto_sync_desc">Whether to automatically backup new SMS or not.</string>
   <string name="ui_enable_auto_sync_summary">Automatically backup %1$s.</string>
+  <string name="ui_enable_auto_sync_no_enabled_summary">No item type to backup selected.</string>
 
   <string name="sd_card_disclaimer">Auto backup might not work reliably when app is installed on SD card.</string>
 
@@ -146,6 +154,7 @@
 
   <string name="error_wifi_only_no_connection">No Wifi connection</string>
   <string name="error_no_connection">No internet connection</string>
+  <string name="error_sms_provider_not_writable">Cannot write to SMS provider</string>
 
   <string name="ui_dialog_missing_credentials_title">Login information</string>
 
@@ -180,6 +189,19 @@
   prevents this application from backing up incoming messages. See the FAQ
   on the website for more information.</string>
 
+  <string name="ui_dialog_enable_whatsapp_title">Enable WhatsApp</string>
+  <string name="ui_dialog_enable_whatsapp_message">
+      SMS Backup+ can now also back up your WhatsApp messages.
+      Do you want to enable this?</string>
+
+  <string name="ui_dialog_kitkat_sms_permission_title">SMS write permission required</string>
+  <string name="ui_dialog_kitkat_sms_permission_message">
+      On Android KitKat and above you need to give SMS Backup+ the permission to write SMS in order
+      to restore them. Tapping OK will take you to permissions screen. You need to select "Messaging", then
+      SMS Backup+. Set the "Write SMS/MMS" preference to ON, then return to SMS Backup+
+      and retry the operation.
+  </string>
+
   <string name="ui_sync">Backup</string>
   <string name="ui_skip">Skip</string>
   <string name="err_sync_requires_login_info">Cannot backup without login information.</string>
@@ -208,6 +230,7 @@
   <string name="call_duration_field">Duration: %1$s</string>
 
   <string name="sms_with_field">SMS with %1$s</string>
+  <string name="whatsapp_with_field">WhatsApp chat with %1$s</string>
   <!-- the subject line needs to be identical otherwise threading will be messed up -->
   <string name="mms_with_field">@string/sms_with_field</string>
   <string name="call_with_field">Call with %1$s</string>
@@ -276,6 +299,7 @@
   <string name="sms">SMS</string>
   <string name="mms">MMS</string>
   <string name="calllog">Call log</string>
+  <string name="whatsapp">WhatsApp</string>
 
   <string name="pref_disable_acra">Crash error reporting</string>
   <string name="pref_acra_enabled">SMS Backup+ will automatically send an error report after force closing.</string>
@@ -289,11 +313,12 @@
   <string name="app_log_backup_requested">Backup requested (%1$s)</string>
   <string name="app_log_start_backup">Starting backup (%1$s)</string>
   <string name="app_log_backup_messages">Backing up (%1$d SMS, %2$d MMS, %3$d call log)</string>
+  <string name="app_log_backup_messages_with_config">Using config: %1$s</string>
   <string name="app_log_backup_canceled">Backup canceled</string>
   <string name="app_log_backup_finished">Backup finished</string>
 
   <string name="app_log_backup_failed_authentication">Authentication error: %1$s</string>
-  <string name="app_log_backup_failed_messaging">General error: %1$s</string>
+  <string name="app_log_backup_failed_general_error">General error: %1$s</string>
   <string name="app_log_backup_failed_connectivity">Backup skipped, no connectivity</string>
   <string name="app_log_scheduled_next_sync">Next backup scheduled for: %1$s</string>
   <string name="app_log_no_next_sync">No new backup scheduled</string>
@@ -304,6 +329,9 @@
   <string name="pref_app_log">Sync log</string>
   <string name="pref_app_log_enabled">Log is stored on SD card as \"sms_backup_plus.log\".</string>
   <string name="pref_app_log_disabled">@string/pref_acra_disabled</string>
+
+  <string name="pref_app_log_debug">Extra debug information</string>
+  <string name="pref_app_log_debug_summary">Enables extra debug logging in sync log</string>
 
   <string name="source_incoming">incoming</string>
   <string name="source_regular">regular</string>
@@ -330,8 +358,6 @@
   <string name="ui_dialog_donate_message">Please specify amount:</string>
   <string name="ui_donation_success_message">Donation successful, thank you!</string>
   <string name="ui_donation_failure_message">Donation failed: %1$s</string>
-  <string name="ui_donation_canceled_message">Donation canceled</string>
-  <string name="ui_donation_oh_noez_no_network">Sorry, you need to be connected to the internet in order to make a donation.</string>
 
   <!-- purchase errors -->
   <string name="donation_error_iab_unavailable">In-app billing is not available</string>

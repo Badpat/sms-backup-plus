@@ -1,6 +1,5 @@
 *.*~
 *.keystore
-bin
 gen
 local.properties
 *.iml
@@ -16,6 +15,8 @@ com.zegoggles.smssync_preferences.xml
 app_parts
 target
 out
-build.xml
 proguard.cfg
 proguard-project.txt
+gen-external-apklibs/
+.gradle
+build

@@ -45,7 +45,7 @@
   <string name="status_restore_canceled_details">成功还原了 %1$d/%2$d 个项目</string>
 
   <string name="status_unknown_error">错误</string>
-  <string name="notification_unknown_error">SMS Backup+ 错误</string>
+  <string name="notification_general_error">SMS Backup+ 错误</string>
 
   <string name="status_unknown_error_details">备份/还原时出错:\n<xliff:g id="error_description">%1$s</xliff:g></string>
   <string name="status_auth_failure">登录失败</string>
@@ -293,7 +293,7 @@
   <string name="app_log_backup_finished">备份已完成</string>
 
   <string name="app_log_backup_failed_authentication">认证错误：%1$s</string>
-  <string name="app_log_backup_failed_messaging">一般错误：%1$s</string>
+  <string name="app_log_backup_failed_general_error">一般错误：%1$s</string>
   <string name="app_log_backup_failed_connectivity">备份已跳过，无网络连接</string>
   <string name="app_log_scheduled_next_sync">下次备份于 %1$s</string>
   <string name="app_log_no_next_sync">没有新的备份计划</string>
@@ -330,8 +330,6 @@
   <string name="ui_dialog_donate_message">请指定金额：</string>
   <string name="ui_donation_success_message">捐赠成功，谢谢您！</string>
   <string name="ui_donation_failure_message">捐赠失败：%1$s</string>
-  <string name="ui_donation_canceled_message">捐赠已取消</string>
-  <string name="ui_donation_oh_noez_no_network">抱歉，您需要连接到网络才能进行捐赠。</string>
 
   <!-- purchase errors -->
   <string name="donation_error_iab_unavailable">应用内付费功能不可用</string>

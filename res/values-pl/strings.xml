@@ -23,7 +23,7 @@
     <string name="status_backup_done_details_noitems">Nie było żadnych elementów wymagających kopii zapasowej.</string>
     <string name="status_restore_canceled_details">%1$d/%2$d elementów poprawnie przywróconych.</string>
     <string name="status_unknown_error">Błąd</string>
-    <string name="notification_unknown_error">SMSBackup+ błąd</string>
+    <string name="notification_general_error">SMSBackup+ błąd</string>
     <string name="status_unknown_error_details">Błąd podczas wykonywania kopii zapasowej/przywracania:\n %1$s</string>
     <string name="status_auth_failure">Błąd podczas logowania</string>
     <string name="notification_auth_failure">SMSBackup+ błąd logowania</string>
@@ -183,13 +183,9 @@
     <string name="ui_restore_calllog_desc" />
     <string name="sms">SMS</string>
     <string name="calllog">Call log</string>
-    <string name="ui_dialog_donate_prepare_message">Przygotowanie darowizny, proszę czekać...</string>
     <string name="ui_dialog_donate_message">Określ kwotę i walutę:</string>
     <string name="ui_donation_success_message">Darowizna dokonana. Dziekuję bardzo!</string>
     <string name="ui_donation_failure_message">Darowizna nieudana: %1$s</string>
-    <string name="ui_donation_canceled_message">Darowizna anulowana</string>
-    <string name="ui_donation_prompt_currency">Waluta</string>
-    <string name="ui_donation_oh_noez_no_network">Musisz mieć dostęp do Internetu aby dokonać darowizny.</string>
     <string name="pref_disable_acra">Zgłaszanie błędu</string>
     <string name="pref_acra_enabled">SMS Backup+ wyśle automatycznie raport o błędzie po wymuszonym zamknięciu.</string>
     <string name="pref_acra_disabled">Wyłączone</string>
@@ -204,7 +200,7 @@
     <string name="app_log_backup_canceled">Tworzenie kopii anulowane</string>
     <string name="app_log_backup_finished">Tworzenie kopii ukończone</string>
     <string name="app_log_backup_failed_authentication">Błąd autoryzacji: %1$s</string>
-    <string name="app_log_backup_failed_messaging">Błąd: %1$s</string>
+    <string name="app_log_backup_failed_general_error">Błąd: %1$s</string>
     <string name="app_log_backup_failed_connectivity">Pomijam tworzenie kopii, brak połączenia</string>
     <string name="app_log_scheduled_next_sync">Następna planowana kopia zapasowa: %1$s</string>
     <string name="app_log_no_next_sync">Brak zaplanowanych kopii zapasowych</string>

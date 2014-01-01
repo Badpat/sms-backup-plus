@@ -45,7 +45,7 @@
   <string name="status_restore_canceled_details">%1$d/%2$d éléments restaurés avec succès.</string>
 
   <string name="status_unknown_error">Erreur</string>
-  <string name="notification_unknown_error">Erreur SMSBackup+</string>
+  <string name="notification_general_error">Erreur SMSBackup+</string>
 
   <string name="status_unknown_error_details">Erreur pendant la sauvegarde/restauration :\n<xliff:g id="error_description">%1$s</xliff:g></string>
   <string name="status_auth_failure">Erreur d\'identification</string>
@@ -272,13 +272,9 @@
   <string name="mms">MMS</string>
   <string name="calllog">Journal d\'appel</string>
 
-  <string name="ui_dialog_donate_prepare_message">Préparation du, veuillez attendre…</string>
   <string name="ui_dialog_donate_message">Veuillez spécifier le montant ainsi que la devise :</string>
   <string name="ui_donation_success_message">Don effectué, merci !</string>
   <string name="ui_donation_failure_message">Erreur lors du don : %1$s</string>
-  <string name="ui_donation_canceled_message">Don annulé</string>
-  <string name="ui_donation_prompt_currency">Devise</string>
-  <string name="ui_donation_oh_noez_no_network">Désolé, mais vous devez être connecté à Internet afin d\'effectuer un don.</string>
 
   <string name="pref_disable_acra">Rapporter les crashs</string>
   <string name="pref_acra_enabled">SMS Backup+ va automatiquement envoyer un rapport d\'erreur après sa fermeture forcée.</string>
@@ -296,7 +292,7 @@
   <string name="app_log_backup_finished">Sauvegarde effectuée</string>
 
   <string name="app_log_backup_failed_authentication">Erreur d\'authentification : %1$s</string>
-  <string name="app_log_backup_failed_messaging">Erreur générale : %1$s</string>
+  <string name="app_log_backup_failed_general_error">Erreur générale : %1$s</string>
   <string name="app_log_backup_failed_connectivity">Sauvegarde non effectuée, aucune connection</string>
   <string name="app_log_scheduled_next_sync">Prochaine sauvegarde prévue pour : %1$s</string>
   <string name="app_log_no_next_sync">Pas de nouvelle sauvegarde prévue</string>

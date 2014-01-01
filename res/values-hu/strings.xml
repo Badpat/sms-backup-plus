@@ -47,7 +47,7 @@
   <string name="status_restore_canceled_details">%1$d/%2$d elem visszaállítása sikeres volt.</string>
 
   <string name="status_unknown_error">Hiba</string>
-  <string name="notification_unknown_error">SMS Backup+ hiba</string>
+  <string name="notification_general_error">SMS Backup+ hiba</string>
 
   <string name="status_unknown_error_details">Hiba történt a mentés/visszaállítás során:\n<xliff:g id="error_description">%1$s</xliff:g></string>
   <string name="status_auth_failure">Bejelentkezési hiba</string>
@@ -103,6 +103,9 @@
   <string name="ui_backup_calllog_label">Hívásnapló mentése</string>
   <string name="ui_backup_calllog_desc">Hívásnapló mentésének engedélyezése</string>
 
+  <string name="ui_backup_whatsapp_label">WhatsApp mentése</string>
+  <string name="ui_backup_whatsapp_desc">WhatsApp üzenetek mentésének engedélyezése</string>
+
   <string name="ui_backup_calllog_sync_calendar_enabled_label">Szinkronizálás naptárral</string>
   <string name="ui_backup_calllog_sync_calendar_enabled_desc">Hívásnapló bejegyzéseinek mentése naptárba</string>
 
@@ -116,6 +119,10 @@
   <string name="ui_imap_folder_calllog_desc">Hívásnapló bejegyzések mentése az itt megadott Gmail címke alá.</string>
   <string name="ui_imap_folder_calllog_label_dialog_msg">A feltöltött hívásnapló bejegyzések az itt megadott címkével lesznek megjelölve Gmailben.</string>
 
+  <string name="ui_imap_folder_whatsapp_label">WhatsApp címkéje</string>
+  <string name="ui_imap_folder_whatsapp_desc">WhatsApp üzenetek mentése az itt megadott Gmail címke alá.</string>
+  <string name="ui_imap_folder_whatsapp_label_dialog_msg">A feltöltött WhatsApp üzenetek az itt megadott címkével lesznek megjelölve Gmailben.</string>
+
   <string name="ui_mark_as_read_label">Megjelölés olvasottként (email)</string>
   <string name="ui_mark_as_read_desc">Üzenetek megjelölése olvasottként Gmailben.</string>
 
@@ -128,6 +135,7 @@
   <string name="ui_enable_auto_sync_label">Automatikus mentés</string>
   <string name="ui_enable_auto_sync_desc">Új SMS-ek automatikus mentése.</string>
   <string name="ui_enable_auto_sync_summary">%1$s automatikus mentése.</string>
+  <string name="ui_enable_auto_sync_no_enabled_summary">Nincs mentésre kijelölt elem.</string>
 
   <string name="sd_card_disclaimer">Az automatikus mentés nem működik megbízhatóan, ha az alkalmazás az SD-kártyára van telepítve.</string>
 
@@ -170,13 +178,13 @@
   <string name="ui_dialog_disconnect_msg">Biztos benne? A kapcsolat bontása után újra jóvá kell hagynia hozzáférést a fiókjával és a helyi biztonsági mentés állapota is alaphelyzetbe kerül.</string>
 
   <string name="ui_dialog_upgrade_title">Frissítési információk</string>
-  <string name="ui_dialog_upgrade_msg">
-  Az SMS Backup+ visszafelé kompatibilis az SMS Backuppal. Mindazonáltal bizonyosodjon meg róla, hogy az \"Automatikus mentés\" csak az egyik alkalmazásban aktív, különben előfordulhatnak ismétlődések a mentett üzenetek között. Ezen kívül válassza a \"Kihagyás\" opciót az első mentéskor, ha már korábban készült biztonsági mentés az üzenetekről.
-  </string>
+  <string name="ui_dialog_upgrade_msg">Az SMS Backup+ visszafelé kompatibilis az SMS Backuppal. Mindazonáltal bizonyosodjon meg róla, hogy az \"Automatikus mentés\" csak az egyik alkalmazásban aktív, különben előfordulhatnak ismétlődések a mentett üzenetek között. Ezen kívül válassza a \"Kihagyás\" opciót az első mentéskor, ha már korábban készült biztonsági mentés az üzenetekről.</string>
 
   <string name="ui_dialog_brokendroidx_title">DROID X SMS hiba</string>
-  <string name="ui_dialog_brokendroidx_msg">Van egy hiba a Droid X készülékekben,
-  amely megakadályozza, hogy az alkalmazás hozzáférjen a bejövő üzenetekhez. További információkért keresse fel a gyakran ismételt kérdéseket a weboldalon.</string>
+  <string name="ui_dialog_brokendroidx_msg">Van egy hiba a Droid X készülékekben, amely megakadályozza, hogy az alkalmazás hozzáférjen a bejövő üzenetekhez. További információkért keresse fel a gyakran ismételt kérdéseket a weboldalon.</string>
+
+  <string name="ui_dialog_enable_whatsapp_title">WhatsApp engedélyezése</string>
+  <string name="ui_dialog_enable_whatsapp_message">Az SMS Backup+ képes menteni a WhatsApp üzeneteket. Szeretné engedélyezni?</string>
 
   <string name="ui_sync">Mentés</string>
   <string name="ui_skip">Kihagyás</string>
@@ -205,6 +213,7 @@
   <string name="call_duration_field">Hossz: %1$s</string>
 
   <string name="sms_with_field">SMS: %1$s</string>
+  <string name="whatsapp_with_field">WhatsApp: %1$s</string>
   <!-- the subject line needs to be identical otherwise threading will be messed up -->
   <string name="mms_with_field">@string/sms_with_field</string>
   <string name="call_with_field">Hívás: %1$s</string>
@@ -273,6 +282,7 @@
   <string name="sms">SMS</string>
   <string name="mms">MMS</string>
   <string name="calllog">hívásnapló</string>
+  <string name="whatsapp">WhatsApp</string>
 
   <string name="pref_disable_acra">Hibajelentés küldése</string>
   <string name="pref_acra_enabled">Az SMS Backup+ automatikusan hibajelentést küld kényszerbezárás esetén.</string>
@@ -286,11 +296,12 @@
   <string name="app_log_backup_requested">Mentés kérvényezve (%1$s)</string>
   <string name="app_log_start_backup">Mentés indítása (%1$s)</string>
   <string name="app_log_backup_messages">Mentés (%1$d SMS, %2$d MMS, %3$d hívásnapló bejegyzés)</string>
+  <string name="app_log_backup_messages_with_config">Konfiguráció: %1$s</string>
   <string name="app_log_backup_canceled">Mentés leállítva</string>
   <string name="app_log_backup_finished">Mentés kész</string>
 
   <string name="app_log_backup_failed_authentication">Hitelesítési hiba: %1$s</string>
-  <string name="app_log_backup_failed_messaging">Általános hiba: %1$s</string>
+  <string name="app_log_backup_failed_general_error">Általános hiba: %1$s</string>
   <string name="app_log_backup_failed_connectivity">Mentés kihagyva, nincs kapcsolat</string>
   <string name="app_log_scheduled_next_sync">Következő mentés ütemezve: %1$s</string>
   <string name="app_log_no_next_sync">Nincs új mentés ütemezve</string>
@@ -301,6 +312,9 @@
   <string name="pref_app_log">Szinkronizálás naplózása</string>
   <string name="pref_app_log_enabled">A napló az SD-kártyán az \"sms_backup_plus.log\" nevű fájlban van.</string>
   <string name="pref_app_log_disabled">@string/pref_acra_disabled</string>
+
+  <string name="pref_app_log_debug">Extra hibakeresési információ</string>
+  <string name="pref_app_log_debug_summary">Engedélyezi az extra hibakeresési adatok mentését a szinkronizációs naplóba</string>
 
   <string name="source_incoming">bejövő</string>
   <string name="source_regular">rendszeres</string>
@@ -319,14 +333,12 @@
   <string name="select_google_account">Válasszon Google-fiókot</string>
 
   <!-- donation related -->
-  <string name="donate">Adományozás</string>
+  <string name="donate">Támogatás</string>
   <string name="donate_summary">Biztonságosan Google Play Áruház rendszerén keresztül.</string>
 
   <string name="ui_dialog_donate_message">Adja meg az összeget:</string>
   <string name="ui_donation_success_message">Az adományozás sikeres volt, köszönjük!</string>
   <string name="ui_donation_failure_message">Az adományozás sikertelen: %1$s</string>
-  <string name="ui_donation_canceled_message">Adományozás megszakítva</string>
-  <string name="ui_donation_oh_noez_no_network">Sajnálom, de az adományozáshoz csatlakoznia kell az internethez.</string>
 
   <!-- purchase errors -->
   <string name="donation_error_iab_unavailable">Az alkalmazáson belüli számlázás nem elérhető</string>

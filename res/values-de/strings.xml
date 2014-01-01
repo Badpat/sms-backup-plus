@@ -30,7 +30,7 @@
   <string name="status_updating_threads">Aktualisiere Threads\u2026</string>
   <string name="status_done">Fertig</string>
   <string name="status_backup_done_details_max_per_sync">Das Maximum von %1$d Einträgen pro Sicherung wurde erreicht. Zum Fortfahren Sicherung erneut starten.</string>
-  <string name="status_backup_done_details_noitems">Keine Einträge zum sichern gefunden.</string>
+  <string name="status_backup_done_details_noitems">Keine Einträge zum Sichern gefunden.</string>
 
   <plurals name="status_backup_done_details">
     <item quantity="one"><xliff:g id="total_items">%1$d</xliff:g> Eintrag erfolgreich gesichert.</item>
@@ -45,7 +45,7 @@
   <string name="status_restore_canceled_details">%1$d/%2$d Einträge erfolgreich wiederhergestellt.</string>
 
   <string name="status_unknown_error">Fehler</string>
-  <string name="notification_unknown_error">SMSBackup+ Fehler</string>
+  <string name="notification_general_error">SMSBackup+ Fehler</string>
 
   <string name="status_unknown_error_details">Fehler während der Sicherung/Wiederherstellung:\n<xliff:g id="error_description">%1$s</xliff:g></string>
   <string name="status_auth_failure">Anmeldungsfehler</string>
@@ -274,13 +274,13 @@
   <string name="mms">MMS</string>
   <string name="calllog">Anrufprotokoll</string>
 
-  <string name="ui_dialog_donate_prepare_message">Bereite Spende vor, bitte warten...</string>
+
+  <string name="donate">Spenden</string>
+  <string name="donate_summary">Mit der sicheren Google Play Bezahlmethode.</string>
+
   <string name="ui_dialog_donate_message">Bitte geben Sie Betrag und Währung an:</string>
   <string name="ui_donation_success_message">Spende erfolgreich, Vielen Dank!</string>
   <string name="ui_donation_failure_message">Spende fehlgeschlagen: %1$s</string>
-  <string name="ui_donation_canceled_message">Spende abgebrochen</string>
-  <string name="ui_donation_prompt_currency">Währung</string>
-  <string name="ui_donation_oh_noez_no_network">Entschuldigung, Sie müssen mit dem Internet verbunden sein um eine Spende zu tätigen.</string>
 
   <string name="pref_disable_acra">Fehlerreport</string>
   <string name="pref_acra_enabled">SMS Backup+ wird automatisch einen Fehlerreport nach dem Absturz senden.</string>
@@ -298,7 +298,7 @@
   <string name="app_log_backup_finished">Sicherung fertiggestellt</string>
 
   <string name="app_log_backup_failed_authentication">Authentifizierungsfehler: %1$s</string>
-  <string name="app_log_backup_failed_messaging">Allgemeiner Fehler: %1$s</string>
+  <string name="app_log_backup_failed_general_error">Allgemeiner Fehler: %1$s</string>
   <string name="app_log_backup_failed_connectivity">Sicherung übersprungen, keine Verbindung</string>
   <string name="app_log_scheduled_next_sync">Nächste Sicherung geplant für: %1$s</string>
   <string name="app_log_no_next_sync">Keine neue Sicherung geplant</string>
@@ -315,4 +315,14 @@
   <string name="source_3rd_party">3rd party</string>
   <string name="source_manual">manuell</string>
   <string name="source_unknown">unbekannt</string>
+
+  <string name="pref_app_log_debug">Ausführliches Protokoll</string>
+  <string name="pref_app_log_debug_summary">Zusätzliche Informationen im Sync-Protokoll.</string>
+
+  <string name="ui_confirm_action_label">Bestätige Aktionen</string>
+  <string name="ui_confirm_action_desc">Frage vor Backup / Restore</string>
+  <string name="ui_dialog_confirm_action_title">Bestätigung</string>
+  <string name="ui_dialog_confirm_action_msg">Wollen Sie diese Aktion ausführen?</string>
+
+
 </resources>
